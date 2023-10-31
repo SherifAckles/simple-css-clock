@@ -34,12 +34,12 @@ body {
 }
 
 .minutes {
-    animation: cycle 6s infinite linear;
+    animation: cycle 60s infinite linear;
      
 }
 
 .hours {
-    animation: cycle 60s infinite linear;
+    animation: cycle 3600s infinite linear;
     width:40% ;
 }
 
