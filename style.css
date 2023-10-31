@@ -38,7 +38,7 @@ body {
 }
 
 .hours {
-    animation: cycle 3600s infinite linear;
+    animation: cycle 60s infinite linear;
 }
 
 @keyframes cycle {
