@@ -1,0 +1,51 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* Styles for clock */
+.clock {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    background-color: #beb8d8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Added this to make positioning easier */
+}
+
+.hand {
+    position: absolute;
+    width: 45%;
+    height: 4px;
+    background-color: rgb(41, 38, 38);
+    transform-origin: 0% 50%; /* Adjusted transform-origin to the left end */
+    top: 50%;
+    left: 50%; /* Set left to 50% to center the hand horizontally */
+    transform: translate(-50%, -50%); /* Center vertically and horizontally */
+}
+
+.minutes {
+    animation: cycle 6s infinite linear;
+}
+
+.hours {
+    animation: cycle 3600s infinite linear;
+}
+
+@keyframes cycle {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
